@@ -60,9 +60,9 @@ OFFLINE       Chess · card tricks · games
 | Project | The idea | Built with |
 | :--- | :--- | :--- |
 | [**UniViGate**](https://github.com/k3ng0T/Univigate) | A team-built guide to universities in Kazakhstan, with a catalog, map, and comparison tools. | JavaScript · HTML · CSS |
-| [**ТАҢ / tan.cafe**](https://github.com/k3ng0T/tan.cafe) | A digital café menu with a browser-based order basket. | JavaScript · HTML · CSS |
-| [**ExploreKZ**](https://github.com/k3ng0T/Explore.kz) | A travel-planning prototype for exploring Kazakhstan. | JavaScript · HTML · CSS |
-| [**Project markers**](https://github.com/k3ng0T/project-manager) | A local, self-hosted workspace for projects, tasks, and progress. | Python · Flask · JavaScript |
+| [**ZERO Model**](https://github.com/k3ng0T/Zero-Model) | A voice-controlled AI agent for operating a computer. | Rust · Python · Web |
+| [**messenger.app**](https://github.com/k3ng0T/messenger.app) | A local network messenger for real-time conversations. | Python · PySide6 · SQL |
+| [**personal-hub**](https://github.com/k3ng0T/personal-hub) | My personal portfolio and a home for my projects. | HTML · CSS · JavaScript |
 | [**SendFlow**](https://github.com/k3ng0T/SendFlow) | A web interface for scheduling and sending WhatsApp messages. | Python · Flask · PyWhatKit |
 | [**PDF Reader and Structurer**](https://github.com/k3ng0T/PDF-book-READER) | Extracts text and images from PDFs and structures the content as JSON. | Python · PyMuPDF |
 
