@@ -1,13 +1,6 @@
-<!--
-  YOUR BANNER GOES HERE
-  1. Add your image to this profile repository as assets/banner.png.
-  2. Remove the comment markers around the <p> block below.
-  3. If your image has a different name or format, update the src path.
-
 <p align="center">
-  <img src="./assets/banner.png" alt="Gotanda — developer and maker" width="100%">
+  <img src="./assets/banner.png" alt="Anime illustration of a singer on stage" width="100%">
 </p>
--->
 
 <p align="center"><sub>DEVELOPER &nbsp; / &nbsp; MAKER &nbsp; / &nbsp; CURIOUS MIND</sub></p>
 
