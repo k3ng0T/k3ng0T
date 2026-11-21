@@ -107,7 +107,19 @@ def design():
     hero = rect(0, 0, 900, 218, BG, 30)
     hero += '<defs><clipPath id="hero-clip"><rect width="900" height="218" rx="30"/></clipPath></defs>'
     hero += '<g clip-path="url(#hero-clip)"><circle cx="806" cy="-38" r="170" fill="#2b2028"/><circle cx="838" cy="195" r="95" fill="#30232b"/></g>'
-    hero += '<circle cx="783" cy="93" r="56" fill="none" stroke="#8b5b70" stroke-width="1.5"/><circle cx="783" cy="93" r="38" fill="none" stroke="#624655" stroke-width="1"/>'
+    hero += '''<style>
+      .hero-ring { transform-origin: 783px 93px; animation: hero-spin 24s linear infinite; }
+      .hero-ring-inner { transform-origin: 783px 93px; animation: hero-spin 18s linear infinite reverse; }
+      @keyframes hero-spin { to { transform: rotate(360deg); } }
+      @media (prefers-reduced-motion: reduce) { .hero-ring, .hero-ring-inner { animation: none; } }
+    </style>'''
+    hero += '<defs><linearGradient id="hero-sun" x2="1" y2="1"><stop stop-color="#f3c1d3"/><stop offset="1" stop-color="#c8afe2"/></linearGradient></defs>'
+    hero += '<circle cx="783" cy="93" r="61" fill="none" stroke="#8b5b70" stroke-width="1.3"/>'
+    hero += '<g class="hero-ring"><circle cx="783" cy="93" r="52" fill="none" stroke="#b58ba4" stroke-width="1.4" stroke-dasharray="5 7"/><circle cx="783" cy="41" r="3" fill="#e9a4bd"/></g>'
+    hero += '<g class="hero-ring-inner"><circle cx="783" cy="93" r="44" fill="none" stroke="#806779" stroke-width="1.2" stroke-dasharray="1 5"/><circle cx="783" cy="49" r="2.5" fill="#c8afe2"/></g>'
+    hero += '<circle cx="783" cy="93" r="34" fill="url(#hero-sun)"/>'
+    hero += text(778, 111, "g", 51, "#201920", 700, 'text-anchor="middle"')
+    hero += '<circle cx="799" cy="106" r="4.5" fill="#946886"/>'
     hero += text(32, 47, "DEVELOPER  /  MAKER  /  CURIOUS MIND", 13, PINK, 700, 'class="mono"')
     hero += text(32, 116, "Gotanda", 64, TEXT, 750) + text(289, 116, ".", 64, PINK, 750)
     hero += text(34, 150, "Building things for the web and beyond.", 20, MUTED)
