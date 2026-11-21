@@ -4,10 +4,10 @@
 
 <img src="assets/profile-hero.svg" width="100%" alt="Gotanda, also known as k3ng0T. Developer and maker at NEW LEGENDA.">
 
-<a href="https://gotanda.is-a.dev"><img src="https://img.shields.io/badge/Portfolio-303035?style=for-the-badge&amp;logo=firefoxbrowser&amp;logoColor=f2b4ca" alt="Portfolio"></a>
+<a href="https://gotanda.is-a.dev"><img src="https://img.shields.io/badge/Portfolio-303035?style=for-the-badge&amp;logo=firefoxbrowser&amp;logoColor=d2bde9" alt="Portfolio"></a>
 <a href="https://www.instagram.com/just_a_simple_vibecoder"><img src="https://img.shields.io/badge/Instagram-303035?style=for-the-badge&amp;logo=instagram&amp;logoColor=f2b4ca" alt="Instagram"></a>
 <a href="mailto:pride@gotanda.is-a.dev"><img src="https://img.shields.io/badge/Email-303035?style=for-the-badge&amp;logo=maildotru&amp;logoColor=f2b4ca" alt="Email"></a>
-<a href="https://github.com/k3ng0T?tab=repositories"><img src="https://img.shields.io/badge/Repositories-303035?style=for-the-badge&amp;logo=github&amp;logoColor=f2b4ca" alt="All repositories"></a>
+<a href="https://github.com/k3ng0T?tab=repositories"><img src="https://img.shields.io/badge/Repositories-303035?style=for-the-badge&amp;logo=github&amp;logoColor=d2bde9" alt="All repositories"></a>
 
 <br><br>
 
@@ -32,7 +32,7 @@
 
 <br><br>
 
-<a href="https://github.com/k3ng0T?tab=repositories"><img src="https://img.shields.io/badge/Explore_all_repositories-303035?style=for-the-badge&amp;logo=github&amp;logoColor=f2b4ca" alt="Explore all repositories"></a>
+<a href="https://github.com/k3ng0T?tab=repositories"><img src="https://img.shields.io/badge/Explore_all_repositories-303035?style=for-the-badge&amp;logo=github&amp;logoColor=d2bde9" alt="Explore all repositories"></a>
 
 <p><sub>GOTANDA / K3NG0T &nbsp; // &nbsp; MADE WITH CURIOSITY</sub></p>
 

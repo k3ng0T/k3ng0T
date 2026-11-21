@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="218" viewBox="0 0 900 218" role="img">
 <style>text{font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif} .mono{font-family: ui-monospace,Consolas,monospace} .small{font-size:13px;letter-spacing:1.6px;font-weight:700} .body{font-size:20px} .muted{fill:#aaa2a5}</style>
-<rect x="0" y="0" width="900" height="218" rx="30" fill="#171719" stroke="none"/><defs><clipPath id="hero-clip"><rect width="900" height="218" rx="30"/></clipPath></defs><g clip-path="url(#hero-clip)"><circle cx="806" cy="-38" r="170" fill="#2b2028"/><circle cx="838" cy="195" r="95" fill="#30232b"/></g><style>
+<rect x="0" y="0" width="900" height="218" rx="30" fill="#171719" stroke="none"/><defs><clipPath id="hero-clip"><rect width="900" height="218" rx="30"/></clipPath></defs><g clip-path="url(#hero-clip)"><circle cx="806" cy="-38" r="170" fill="#312538"/><circle cx="838" cy="195" r="95" fill="#38283a"/></g><style>
       .hero-ring { transform-origin: 783px 93px; animation: hero-spin 24s linear infinite; }
       .hero-ring-inner { transform-origin: 783px 93px; animation: hero-spin 18s linear infinite reverse; }
       @keyframes hero-spin { to { transform: rotate(360deg); } }

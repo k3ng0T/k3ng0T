@@ -13,6 +13,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 ASSETS = ROOT / "assets"
 BG, PANEL, LINE, TEXT, MUTED, PINK = "#171719", "#232326", "#353438", "#f4f0ed", "#aaa2a5", "#e9a4bd"
+LILAC = "#d2bde9"
 
 
 def esc(value):
@@ -36,7 +37,7 @@ def text(x, y, value, size=20, fill=TEXT, weight=400, extra=""):
 
 def heading(title, number):
     return (rect(28, 26, 45, 45, PANEL, 14)
-            + text(50, 56, number, 14, PINK, 700, 'text-anchor="middle" class="mono"')
+            + text(50, 56, number, 14, LILAC if number in {"02", "03", "05"} else PINK, 700, 'text-anchor="middle" class="mono"')
             + text(90, 58, title, 25, TEXT, 700))
 
 
@@ -75,8 +76,8 @@ def orbit_card():
         .orbit-outer, .orbit-inner, .upright-outer, .upright-inner { animation: none; }
       }
     </style>'''
-    card += '<circle cx="235" cy="280" r="154" fill="none" stroke="#665260" stroke-width="1.4"/>'
-    card += '<circle cx="235" cy="280" r="80" fill="none" stroke="#665260" stroke-width="1.2" stroke-dasharray="4 7"/>'
+    card += '<circle cx="235" cy="280" r="154" fill="none" stroke="#75637d" stroke-width="1.4"/>'
+    card += '<circle cx="235" cy="280" r="80" fill="none" stroke="#75637d" stroke-width="1.2" stroke-dasharray="4 7"/>'
     card += '<defs><linearGradient id="sun" x2="1" y2="1"><stop stop-color="#f3c1d3"/><stop offset="1" stop-color="#c8afe2"/></linearGradient></defs>'
     card += '<circle cx="235" cy="280" r="40" fill="url(#sun)"/>'
     card += text(232, 297, "g", 55, "#201920", 700, 'text-anchor="middle"')
@@ -86,11 +87,11 @@ def orbit_card():
              (81,280,"AutoHotkey"), (126,171,"Node.js")]
     inner = [(235,200,"JavaScript"), (304,320,"React"), (166,320,"Swift")]
     card += '<g class="orbit-outer">'
-    for x, y, name in outer:
-        card += orbit_planet(x, y, name, icons, "upright-outer", "#e8b6c9")
+    for i, (x, y, name) in enumerate(outer):
+        card += orbit_planet(x, y, name, icons, "upright-outer", LILAC if i % 2 == 0 else PINK)
     card += '</g><g class="orbit-inner">'
-    for x, y, name in inner:
-        card += orbit_planet(x, y, name, icons, "upright-inner", "#d5c0ec")
+    for i, (x, y, name) in enumerate(inner):
+        card += orbit_planet(x, y, name, icons, "upright-inner", PINK if i == 0 else LILAC)
     card += '</g>'
     card += text(485, 117, "A SMALL SYSTEM OF TECHNOLOGIES", 13, MUTED, 700, 'class="mono"')
     labels = ["JavaScript", "TypeScript", "Node.js", "React", "PHP", "Python",
@@ -98,7 +99,7 @@ def orbit_card():
     for index, label in enumerate(labels):
         x = 485 + (index % 2) * 190
         y = 140 + (index // 2) * 48
-        card += pill(x, y, label, 180, "#d5c0ec" if label.startswith("Swift") else PINK)
+        card += pill(x, y, label, 180, LILAC if index % 2 or label.startswith("Swift") else PINK)
     card += text(485, 472, "EXPLORE THE INTERACTIVE VERSION ON MY SITE", 12, MUTED, 600, 'class="mono"')
     return svg(510, card)
 
@@ -106,7 +107,7 @@ def orbit_card():
 def design():
     hero = rect(0, 0, 900, 218, BG, 30)
     hero += '<defs><clipPath id="hero-clip"><rect width="900" height="218" rx="30"/></clipPath></defs>'
-    hero += '<g clip-path="url(#hero-clip)"><circle cx="806" cy="-38" r="170" fill="#2b2028"/><circle cx="838" cy="195" r="95" fill="#30232b"/></g>'
+    hero += '<g clip-path="url(#hero-clip)"><circle cx="806" cy="-38" r="170" fill="#312538"/><circle cx="838" cy="195" r="95" fill="#38283a"/></g>'
     hero += '''<style>
       .hero-ring { transform-origin: 783px 93px; animation: hero-spin 24s linear infinite; }
       .hero-ring-inner { transform-origin: 783px 93px; animation: hero-spin 18s linear infinite reverse; }
@@ -131,7 +132,7 @@ def design():
                             (151, "BUILDING", "Web, desktop and mobile projects"),
                             (198, "LEARNING", "Swift — and whatever sparks curiosity")]:
         about += rect(28, y-27, 844, 39, PANEL, 13)
-        about += text(45, y, label, 12, PINK, 700, 'class="mono"')
+        about += text(45, y, label, 12, LILAC if label == "LEARNING" else PINK, 700, 'class="mono"')
         about += text(168, y, value, 18, TEXT, 600)
     write("profile-about.svg", svg(238, about))
 
@@ -154,7 +155,7 @@ def design():
     ]
     for slug, title, description, tech in projects:
         card = rect(0, 0, 900, 220, BG, 30)
-        card += text(36, 57, tech, 19, PINK, 700, 'class="mono"')
+        card += text(36, 57, tech, 19, LILAC if slug in {"zero", "portfolio", "pdf"} else PINK, 700, 'class="mono"')
         card += text(36, 116, title, 40, TEXT, 700) + text(845, 54, "↗", 28, MUTED, 500)
         card += text(36, 164, description, 26, MUTED)
         write(f"project-{slug}.svg", svg(220, card))
@@ -214,7 +215,7 @@ def stats(user):
         stats_card += rect(x, 83, 202, 92, PANEL, 18)
         stats_card += text(x+19, 122, value, 28, TEXT, 700) + text(x+19, 151, label, 13, MUTED, 500)
     stats_card += text(31, 211, "PUBLIC CONTRIBUTIONS / LAST 26 WEEKS", 12, MUTED, 700, 'class="mono"')
-    colors = ["#2b292d", "#724357", "#a7647f", "#d18aa5", "#efbfd0"]
+    colors = ["#2b292d", "#614b70", "#9679ad", "#bd9ed5", "#efbfd0"]
     for wi, week in enumerate(weeks[-26:]):
         for day in week["contributionDays"]:
             weekday = (dt.date.fromisoformat(day["date"]).weekday()+1) % 7
