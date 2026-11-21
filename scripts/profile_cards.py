@@ -51,6 +51,58 @@ def pill(x, y, label, width, color=PINK):
             + text(x+29, y+25, label, 16, TEXT, 600))
 
 
+def orbit_planet(x, y, skill, icons, motion, accent):
+    # Brand marks are from Simple Icons (CC0): https://simpleicons.org/
+    path = esc(icons[skill])
+    return (f'<g transform="translate({x} {y})"><g class="{motion}">'
+            + '<circle r="23" fill="#29242b" stroke="#806977" stroke-width="1.3"/>'
+            + f'<path d="{path}" fill="{accent}" transform="translate(-11.5 -11.5) scale(.9583)"/>'
+            + '</g></g>')
+
+
+def orbit_card():
+    icons = json.loads((ROOT / "scripts" / "skill-icons.json").read_text(encoding="utf-8"))
+    card = rect(0, 0, 900, 510, BG, 30) + heading("Tech stack", "02")
+    card += '''<style>
+      .orbit-outer { transform-origin: 235px 280px; animation: orbit-spin 52s linear infinite; }
+      .orbit-inner { transform-origin: 235px 280px; animation: orbit-spin 34s linear infinite reverse; }
+      .upright-outer { animation: orbit-counter 52s linear infinite; }
+      .upright-inner { animation: orbit-counter 34s linear infinite reverse; }
+      .upright-outer, .upright-inner { transform-origin: 0 0; }
+      @keyframes orbit-spin { to { transform: rotate(360deg); } }
+      @keyframes orbit-counter { to { transform: rotate(-360deg); } }
+      @media (prefers-reduced-motion: reduce) {
+        .orbit-outer, .orbit-inner, .upright-outer, .upright-inner { animation: none; }
+      }
+    </style>'''
+    card += '<circle cx="235" cy="280" r="154" fill="none" stroke="#665260" stroke-width="1.4"/>'
+    card += '<circle cx="235" cy="280" r="80" fill="none" stroke="#665260" stroke-width="1.2" stroke-dasharray="4 7"/>'
+    card += '<defs><linearGradient id="sun" x2="1" y2="1"><stop stop-color="#f3c1d3"/><stop offset="1" stop-color="#c8afe2"/></linearGradient></defs>'
+    card += '<circle cx="235" cy="280" r="40" fill="url(#sun)"/>'
+    card += text(232, 297, "g", 55, "#201920", 700, 'text-anchor="middle"')
+    card += '<circle cx="253" cy="295" r="4.5" fill="#946886"/>'
+    outer = [(235,126,"TypeScript"), (344,171,"Python"), (389,280,"PHP"),
+             (344,389,"C++"), (235,434,"Rust"), (126,389,"Kotlin"),
+             (81,280,"AutoHotkey"), (126,171,"Node.js")]
+    inner = [(235,200,"JavaScript"), (304,320,"React"), (166,320,"Swift")]
+    card += '<g class="orbit-outer">'
+    for x, y, name in outer:
+        card += orbit_planet(x, y, name, icons, "upright-outer", "#e8b6c9")
+    card += '</g><g class="orbit-inner">'
+    for x, y, name in inner:
+        card += orbit_planet(x, y, name, icons, "upright-inner", "#d5c0ec")
+    card += '</g>'
+    card += text(485, 117, "A SMALL SYSTEM OF TECHNOLOGIES", 13, MUTED, 700, 'class="mono"')
+    labels = ["JavaScript", "TypeScript", "Node.js", "React", "PHP", "Python",
+              "C++", "AutoHotkey", "Rust", "Kotlin", "Swift · learning"]
+    for index, label in enumerate(labels):
+        x = 485 + (index % 2) * 190
+        y = 140 + (index // 2) * 48
+        card += pill(x, y, label, 180, "#d5c0ec" if label.startswith("Swift") else PINK)
+    card += text(485, 472, "EXPLORE THE INTERACTIVE VERSION ON MY SITE", 12, MUTED, 600, 'class="mono"')
+    return svg(510, card)
+
+
 def design():
     hero = rect(0, 0, 900, 218, BG, 30)
     hero += '<defs><clipPath id="hero-clip"><rect width="900" height="218" rx="30"/></clipPath></defs>'
@@ -71,18 +123,7 @@ def design():
         about += text(168, y, value, 18, TEXT, 600)
     write("profile-about.svg", svg(238, about))
 
-    stack = rect(0, 0, 900, 254, BG, 30) + heading("Tech stack", "02")
-    stack += text(31, 99, "LANGUAGES", 12, MUTED, 700, 'class="mono"')
-    x = 30
-    for label, width in [("JavaScript",125),("TypeScript",128),("Python",94),("PHP",72),("C++",68),("Rust",76),("Kotlin",88),("AutoHotkey",133)]:
-        stack += pill(x, 111, label, width)
-        x += width + 7
-    stack += text(31, 181, "WEB & LEARNING", 12, MUTED, 700, 'class="mono"')
-    x = 30
-    for label, width in [("React",92),("Node.js",108),("Swift · learning",166)]:
-        stack += pill(x, 193, label, width, "#e9a4bd" if label.startswith("Swift") else "#ded8d6")
-        x += width + 9
-    write("profile-stack.svg", svg(254, stack))
+    write("profile-stack.svg", orbit_card())
 
     beyond = rect(0, 0, 900, 185, BG, 30) + heading("Beyond the code", "04")
     beyond += text(32, 105, "English · Russian · Chinese · Kazakh · Turkish", 19, TEXT, 600)

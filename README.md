@@ -13,7 +13,7 @@
 
 <img src="assets/profile-about.svg" width="100%" alt="About me: developer at NEW LEGENDA, building web, desktop and mobile projects, currently learning Swift.">
 
-<img src="assets/profile-stack.svg" width="100%" alt="Tech stack: JavaScript, TypeScript, Python, PHP, C++, Rust, Kotlin, AutoHotkey, React and Node.js. Currently learning Swift.">
+<a href="https://gotanda.is-a.dev/#toolkit"><img src="assets/profile-stack.svg" width="100%" alt="Animated tech stack: JavaScript, TypeScript, Python, PHP, C++, Rust, Kotlin, AutoHotkey, React and Node.js. Currently learning Swift. Visit my site for the interactive version."></a>
 
 <img src="assets/profile-work.svg" width="100%" alt="Selected work">
 
@@ -34,6 +34,6 @@
 
 <a href="https://github.com/k3ng0T?tab=repositories"><img src="https://img.shields.io/badge/Explore_all_repositories-303035?style=for-the-badge&amp;logo=github&amp;logoColor=f2b4ca" alt="Explore all repositories"></a>
 
-<p><sub>GOTANDA / K3NG0T &nbsp; ✳ &nbsp; MADE WITH CURIOSITY</sub></p>
+<p><sub>GOTANDA / K3NG0T &nbsp; // &nbsp; MADE WITH CURIOSITY</sub></p>
 
 </div>
