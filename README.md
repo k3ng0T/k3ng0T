@@ -1,75 +1,39 @@
-<p align="center">
-  <img src="./assets/banner.png" alt="Anime illustration of a singer on stage" width="100%">
-</p>
+<div align="center">
 
-<p align="center"><sub>DEVELOPER &nbsp; / &nbsp; MAKER &nbsp; / &nbsp; CURIOUS MIND</sub></p>
+<img src="assets/banner.png" width="100%" alt="Anime illustration of a singer on stage">
 
-<h1 align="center">GOTANDA<span>.</span></h1>
+<img src="assets/profile-hero.svg" width="100%" alt="Gotanda, also known as k3ng0T. Developer and maker at NEW LEGENDA.">
 
-<p align="center">
-  <strong>Building things for the web and beyond.</strong><br>
-  <sub>Also known as <b>k3ng0T</b></sub>
-</p>
+<a href="https://gotanda.is-a.dev"><img src="https://img.shields.io/badge/Portfolio-303035?style=for-the-badge&amp;logo=firefoxbrowser&amp;logoColor=f2b4ca" alt="Portfolio"></a>
+<a href="https://www.instagram.com/just_a_simple_vibecoder"><img src="https://img.shields.io/badge/Instagram-303035?style=for-the-badge&amp;logo=instagram&amp;logoColor=f2b4ca" alt="Instagram"></a>
+<a href="mailto:pride@gotanda.is-a.dev"><img src="https://img.shields.io/badge/Email-303035?style=for-the-badge&amp;logo=maildotru&amp;logoColor=f2b4ca" alt="Email"></a>
+<a href="https://github.com/k3ng0T?tab=repositories"><img src="https://img.shields.io/badge/Repositories-303035?style=for-the-badge&amp;logo=github&amp;logoColor=f2b4ca" alt="All repositories"></a>
 
-<p align="center">
-  <a href="https://gotanda.is-a.dev">Portfolio</a> &nbsp;·&nbsp;
-  <a href="https://github.com/k3ng0T?tab=repositories">Repositories</a> &nbsp;·&nbsp;
-  <a href="https://www.instagram.com/just_a_simple_vibecoder">Instagram</a> &nbsp;·&nbsp;
-  <a href="mailto:pride@gotanda.is-a.dev">Email</a>
-</p>
+<br><br>
 
----
+<img src="assets/profile-about.svg" width="100%" alt="About me: developer at NEW LEGENDA, building web, desktop and mobile projects, currently learning Swift.">
 
-### `01` &nbsp; The person behind the code
+<img src="assets/profile-stack.svg" width="100%" alt="Tech stack: JavaScript, TypeScript, Python, PHP, C++, Rust, Kotlin, AutoHotkey, React and Node.js. Currently learning Swift.">
 
-I'm a developer working at [NEW LEGENDA](https://newlegenda.art). I build digital products and explore web, desktop, and mobile development — from interfaces and practical tools to experiments that start with a simple idea.
+<img src="assets/profile-work.svg" width="100%" alt="Selected work">
 
-```text
-CURRENTLY     Building, exploring, and learning Swift
-LANGUAGES     English · Russian · Chinese · Kazakh · Turkish
-OFFLINE       Chess · card tricks · games
-```
+<a href="https://github.com/k3ng0T/Univigate"><img src="assets/project-univigate.svg" width="49%" alt="UniViGate — a team project about universities in Kazakhstan"></a>
+<a href="https://github.com/k3ng0T/Zero-Model"><img src="assets/project-zero.svg" width="49%" alt="ZERO Model — a voice-controlled AI agent"></a>
+<a href="https://github.com/k3ng0T/messenger.app"><img src="assets/project-messenger.svg" width="49%" alt="messenger.app — a local network messenger"></a>
+<a href="https://github.com/k3ng0T/personal-hub"><img src="assets/project-portfolio.svg" width="49%" alt="personal-hub — my portfolio"></a>
+<a href="https://github.com/k3ng0T/SendFlow"><img src="assets/project-sendflow.svg" width="49%" alt="SendFlow — WhatsApp message scheduling"></a>
+<a href="https://github.com/k3ng0T/PDF-book-READER"><img src="assets/project-pdf.svg" width="49%" alt="PDF Reader and Structurer — PDF content as JSON"></a>
 
-### `02` &nbsp; The toolkit
+<img src="assets/profile-beyond.svg" width="100%" alt="Beyond the code: English, Russian, Chinese, Kazakh, Turkish, chess, card tricks, VALORANT and Counter-Strike.">
 
-<p>
-  <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-242424?style=flat-square&logo=javascript&logoColor=F7DF1E">
-  <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-242424?style=flat-square&logo=typescript&logoColor=60A5FA">
-  <img alt="React" src="https://img.shields.io/badge/React-242424?style=flat-square&logo=react&logoColor=61DAFB">
-  <img alt="Node.js" src="https://img.shields.io/badge/Node.js-242424?style=flat-square&logo=nodedotjs&logoColor=8CC84B">
-  <img alt="PHP" src="https://img.shields.io/badge/PHP-242424?style=flat-square&logo=php&logoColor=ADB9E9">
-  <br>
-  <img alt="Python" src="https://img.shields.io/badge/Python-242424?style=flat-square&logo=python&logoColor=FFD43B">
-  <img alt="C++" src="https://img.shields.io/badge/C%2B%2B-242424?style=flat-square&logo=cplusplus&logoColor=81A1C1">
-  <img alt="Rust" src="https://img.shields.io/badge/Rust-242424?style=flat-square&logo=rust&logoColor=DEA584">
-  <img alt="Kotlin" src="https://img.shields.io/badge/Kotlin-242424?style=flat-square&logo=kotlin&logoColor=B695F6">
-  <img alt="AutoHotkey" src="https://img.shields.io/badge/AutoHotkey-242424?style=flat-square&logo=autohotkey&logoColor=95C997">
-</p>
+<img src="assets/profile-activity.svg" width="100%" alt="GitHub activity, refreshed daily">
 
-**Currently learning** &nbsp; <img alt="Swift" src="https://img.shields.io/badge/Swift-242424?style=flat-square&logo=swift&logoColor=F99A6C">
+<img src="assets/profile-streak.svg" width="100%" alt="Current and longest contribution streak in the last year">
 
-### `03` &nbsp; Selected work
+<br><br>
 
-| Project | The idea | Built with |
-| :--- | :--- | :--- |
-| [**UniViGate**](https://github.com/k3ng0T/Univigate) | A team-built guide to universities in Kazakhstan, with a catalog, map, and comparison tools. | JavaScript · HTML · CSS |
-| [**ZERO Model**](https://github.com/k3ng0T/Zero-Model) | A voice-controlled AI agent for operating a computer. | Rust · Python · Web |
-| [**messenger.app**](https://github.com/k3ng0T/messenger.app) | A local network messenger for real-time conversations. | Python · PySide6 · SQL |
-| [**personal-hub**](https://github.com/k3ng0T/personal-hub) | My personal portfolio and a home for my projects. | HTML · CSS · JavaScript |
-| [**SendFlow**](https://github.com/k3ng0T/SendFlow) | A web interface for scheduling and sending WhatsApp messages. | Python · Flask · PyWhatKit |
-| [**PDF Reader and Structurer**](https://github.com/k3ng0T/PDF-book-READER) | Extracts text and images from PDFs and structures the content as JSON. | Python · PyMuPDF |
+<a href="https://github.com/k3ng0T?tab=repositories"><img src="https://img.shields.io/badge/Explore_all_repositories-303035?style=for-the-badge&amp;logo=github&amp;logoColor=f2b4ca" alt="Explore all repositories"></a>
 
-<p align="right"><a href="https://github.com/k3ng0T?tab=repositories">Explore all repositories ↗</a></p>
+<p><sub>GOTANDA / K3NG0T &nbsp; ✳ &nbsp; MADE WITH CURIOSITY</sub></p>
 
-### `04` &nbsp; Away from the keyboard
-
-When I'm not building, you'll probably find me practicing a card trick, playing chess, or queuing up another match.
-
-<p>
-  <strong>1,800+ hours</strong> &nbsp;VALORANT &nbsp;&nbsp; / &nbsp;&nbsp;
-  <strong>1,000+ hours</strong> &nbsp;COUNTER-STRIKE
-</p>
-
----
-
-<p align="center"><sub>GOTANDA / K3NG0T &nbsp; ✳ &nbsp; MADE WITH CURIOSITY</sub></p>
+</div>
